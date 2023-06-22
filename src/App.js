@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { AppProvider } from './context/AppContext';
+import Spotify from './components/Spotify';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             Learn React
           </a>
         </header>
+        <Spotify />
       </div>
     </AppProvider>
   );

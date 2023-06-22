@@ -1,4 +1,5 @@
 import { createContext, useReducer } from 'react';
+import SpotifyWebApi from 'spotify-web-api-js';
 
 const AppReducer = (state, action) => {
     switch (action.type) {
@@ -14,6 +15,8 @@ const initialState = {
     //key: value
     //Same keys from below
 };
+
+const spotifyApi = new SpotifyWebApi();
 
 export const AppContext = createContext();
 
